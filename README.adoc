@@ -31,4 +31,4 @@ docker run \
 
 where:
 
-* * `<project_access_token>` is a Gitlab Personal Access token with the `api` scope.
+* `<project_access_token>` is a Gitlab Personal Access token with the `api` scope.
