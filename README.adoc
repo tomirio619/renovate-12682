@@ -1,0 +1,34 @@
+= renovate-12682
+
+https://github.com/renovatebot/renovate/issues/12682[pipenv aws-cdk dependencies cannot be resolved]
+
+== Requirements
+
+* pipenv;
+* pyenv;
+
+== Lock file generation
+
+[source,shellscript]
+----
+$ pip3 install pipenv
+$ pyenv install 3.10.0
+$ pipenv lock
+----
+
+== Renovate
+
+[source,shellscript]
+----
+docker run \
+    -e LOG_LEVEL=DEBUG \
+    -e RENOVATE_ENDPOINT=https://gitlab.com/api/v4 \
+    -e RENOVATE_AUTODISCOVER=true \
+    -e RENOVATE_TOKEN=<project_access_token> \
+    -e RENOVATE_PLATFORM=gitlab \
+    renovate/renovate:29.8.4
+----
+
+where:
+
+* * `<project_access_token>` is a Gitlab Personal Access token with the `api` scope.
