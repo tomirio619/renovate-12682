@@ -16,7 +16,7 @@ verify_ssl = true
 "aws-cdk.aws-secretsmanager" = "==1.129.0"
 "aws-cdk.aws-ssm" = "==1.129.0"
 "aws-cdk.core" = "==1.129.0"
-requests = "==2.25.1"
+requests = "==2.26.0"
 
 [requires]
 python_version = "3.10"
