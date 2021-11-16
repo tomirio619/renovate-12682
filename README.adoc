@@ -24,6 +24,7 @@ docker run \
     -e LOG_LEVEL=DEBUG \
     -e RENOVATE_ENDPOINT=https://gitlab.com/api/v4 \
     -e RENOVATE_AUTODISCOVER=true \
+    -e RENOVATE_AUTODISCOVER_FILTER=sandsoft/reproduction-repositories/renovate-12682 \
     -e RENOVATE_TOKEN=<project_access_token> \
     -e RENOVATE_PLATFORM=gitlab \
     renovate/renovate:29.8.4
