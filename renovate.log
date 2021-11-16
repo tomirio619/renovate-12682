@@ -1,0 +1,634 @@
+DEBUG: Using RE2 as regex engine
+DEBUG: Parsing configs
+DEBUG: Checking for config file in /usr/src/app/config
+DEBUG: No config file found on disk - skipping
+DEBUG: File config
+       "config": {}
+DEBUG: CLI config
+       "config": {}
+DEBUG: Env config
+       "config": {
+         "hostRules": [],
+         "platform": "gitlab",
+         "endpoint": "https://gitlab.com/api/v4",
+         "token": "***********",
+         "autodiscover": true,
+         "autodiscoverFilter": "sandsoft/reproduction-repositories/renovate-12682"
+       }
+DEBUG: Combined config
+       "config": {
+         "hostRules": [],
+         "platform": "gitlab",
+         "endpoint": "https://gitlab.com/api/v4",
+         "token": "***********",
+         "autodiscover": true,
+         "autodiscoverFilter": "sandsoft/reproduction-repositories/renovate-12682"
+       }
+DEBUG: Adding trailing slash to endpoint
+DEBUG: GitLab version is: 14.5.0-pre
+DEBUG: Using platform gitAuthor: Tom Sandmann <[REDACTED]>
+DEBUG: Adding token authentication for gitlab.com to hostRules
+DEBUG: Using baseDir: /tmp/renovate
+DEBUG: Using cacheDir: /tmp/renovate/cache
+DEBUG: Initializing Renovate internal cache into /tmp/renovate/cache/renovate/renovate-cache-v1
+DEBUG: Commits limit = null
+DEBUG: Autodiscovering GitLab repositories
+DEBUG: Discovered 115 project(s)
+ INFO: Autodiscovered repositories
+       "length": 1,
+       "repositories": ["sandsoft/reproduction-repositories/renovate-12682"]
+DEBUG: Clearing hostRules
+DEBUG: Adding token authentication for gitlab.com to hostRules
+ INFO: Repository started (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "renovateVersion": "29.8.4"
+DEBUG: Using localDir: /tmp/renovate/repos/gitlab/sandsoft/reproduction-repositories/renovate-12682 (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: sandsoft/reproduction-repositories/renovate-12682 default branch = main (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Enabling Git FS (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: using http URL (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "url": "https://gitlab.com/sandsoft/reproduction-repositories/renovate-12682.git"
+DEBUG: resetMemCache() (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Resetting npmrc (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: detectSemanticCommits() (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Initializing git repository into /tmp/renovate/repos/gitlab/sandsoft/reproduction-repositories/renovate-12682 (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Performing blobless clone (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: git clone completed (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "durationMs": 1674
+DEBUG: latest repository commit (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "latestCommit": {
+         "hash": "11455974e3e4bcd10f15829f5e0c4e07c2fe3098",
+         "date": "2021-11-16T11:36:52+01:00",
+         "message": "make requests package updatable",
+         "refs": "HEAD -> main, origin/main, origin/HEAD",
+         "body": "",
+         "author_name": "Tom Sandmann",
+         "author_email": "[REDACTED]"
+       }
+DEBUG: getCommitMessages (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Semantic commits detection: unknown (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: No semantic commits detected (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: checkOnboarding() (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: isOnboarded() (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: findFile(renovate.json) (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Config file exists (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "fileName": "renovate.json"
+DEBUG: ensureIssueClosing() (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Repo is onboarded (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Found renovate.json config file (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Repository config (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "fileName": "renovate.json",
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "extends": [
+           "config:base",
+           ":rebaseStalePrs",
+           ":dependencyDashboard",
+           "group:all"
+         ],
+         "prConcurrentLimit": 1
+       }
+DEBUG: migrateAndValidate() (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: No config migration necessary (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: massaged config (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "extends": [
+           "config:base",
+           ":rebaseStalePrs",
+           ":dependencyDashboard",
+           "group:all"
+         ],
+         "prConcurrentLimit": 1
+       }
+DEBUG: migrated config (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "extends": [
+           "config:base",
+           ":rebaseStalePrs",
+           ":dependencyDashboard",
+           "group:all"
+         ],
+         "prConcurrentLimit": 1
+       }
+DEBUG: Setting hostRules from config (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Found repo ignorePaths (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "ignorePaths": [
+         "**/node_modules/**",
+         "**/bower_components/**",
+         "**/vendor/**",
+         "**/examples/**",
+         "**/__tests__/**",
+         "**/test/**",
+         "**/tests/**",
+         "**/__fixtures__/**"
+       ]
+DEBUG: No vulnerability alerts found (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: findIssue(Dependency Dashboard) (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: No baseBranches (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: extract() (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Setting current branch to main (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: latest commit (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "branchName": "main",
+       "latestCommitDate": "2021-11-16T11:36:52+01:00"
+DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)requirements\.ya?ml$ for manager ansible-galaxy (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)galaxy\.ya?ml$ for manager ansible-galaxy (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: azure.*pipelines?.*\.ya?ml$ for manager azure-pipelines (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)batect(-bundle)?\.yml$ for manager batect (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)batect$ for manager batect-wrapper (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)WORKSPACE(|\.bazel)$ for manager bazel (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: \.bzl$ for manager bazel (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)\.?bitbucket-pipelines\.ya?ml$ for manager bitbucket-pipelines (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: buildkite\.ya?ml for manager buildkite (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: \.buildkite/.+\.ya?ml$ for manager buildkite (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)Gemfile$ for manager bundler (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: \.cake$ for manager cake (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)Cargo.toml$ for manager cargo (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/).circleci/config.yml$ for manager circleci (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)cloudbuild.ya?ml for manager cloudbuild (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)Podfile$ for manager cocoapods (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)([\w-]*)composer.json$ for manager composer (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)deps\.edn$ for manager deps-edn (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)docker-compose[^/]*\.ya?ml$ for manager docker-compose (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager dockerfile (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)Dockerfile\.[^/]*$ for manager dockerfile (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/).drone.yml$ for manager droneci (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/).gitmodules$ for manager git-submodules (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: ^(workflow-templates|\.github\/workflows)\/[^/]+\.ya?ml$ for manager github-actions (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|\/)action\.ya?ml$ for manager github-actions (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: \.gitlab-ci\.yml$ for manager gitlabci (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: \.gitlab-ci\.yml$ for manager gitlabci-include (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)go.mod$ for manager gomod (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: \.gradle(\.kts)?$ for manager gradle (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|\/)gradle\.properties$ for manager gradle (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|\/)gradle\/.+\.toml$ for manager gradle (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: \.versions\.toml$ for manager gradle (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)gradle/wrapper/gradle-wrapper.properties$ for manager gradle-wrapper (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)requirements\.yaml$ for manager helm-requirements (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)values.yaml$ for manager helm-values (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)helmfile.yaml$ for manager helmfile (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)Chart.yaml$ for manager helmv3 (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: ^Formula/[^/]+[.]rb$ for manager homebrew (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: \.html?$ for manager html (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)plugins\.(txt|ya?ml)$ for manager jenkins (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)kustomization\.yaml for manager kustomize (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)project\.clj$ for manager leiningen (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: \.pom\.xml$ for manager maven (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)pom\.xml$ for manager maven (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)package.js$ for manager meteor (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)mix\.exs$ for manager mix (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/).node-version$ for manager nodenv (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)package.json$ for manager npm (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: \.(?:cs|fs|vb)proj$ for manager nuget (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: \.(?:props|targets)$ for manager nuget (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|\/)dotnet-tools\.json$ for manager nuget (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|\/)global\.json$ for manager nuget (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)\.nvmrc$ for manager nvm (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)([\w-]*)requirements\.(txt|pip)$ for manager pip_requirements (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)setup.py$ for manager pip_setup (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)Pipfile$ for manager pipenv (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)pyproject\.toml$ for manager poetry (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)\.pre-commit-config\.yaml$ for manager pre-commit (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)pubspec\.ya?ml$ for manager pub (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/).python-version$ for manager pyenv (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)\.ruby-version$ for manager ruby-version (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: \.sbt$ for manager sbt (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: project/[^/]*.scala$ for manager sbt (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)setup\.cfg$ for manager setup-cfg (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)Package\.swift for manager swift (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: \.tf$ for manager terraform (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)\.terraform-version$ for manager terraform-version (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)terragrunt\.hcl$ for manager terragrunt (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: (^|/)\.terragrunt-version$ for manager terragrunt-version (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using file match: ^.travis.yml$ for manager travis (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Matched 1 file(s) for manager pipenv: Pipfile (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: pipenv.extractPackageFile() (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Found pipenv package files (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Found 1 package file(s) (repository=sandsoft/reproduction-repositories/renovate-12682)
+ INFO: Dependency extraction complete (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "baseBranch": "main",
+       "stats": {
+         "managers": {"pipenv": {"fileCount": 1, "depCount": 13}},
+         "total": {"fileCount": 1, "depCount": 13}
+       }
+DEBUG: Failed to look up dependency aws-cdk.aws-ecs (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, dependency=aws-cdk.aws-ecs)
+DEBUG: Failed to look up dependency aws-cdk.aws-ecs-patterns (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, dependency=aws-cdk.aws-ecs-patterns)
+DEBUG: Failed to look up dependency aws-cdk.aws-iam (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, dependency=aws-cdk.aws-iam)
+DEBUG: Failed to look up dependency aws-cdk.aws-apigateway (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, dependency=aws-cdk.aws-apigateway)
+DEBUG: Failed to look up dependency aws-cdk.aws-ec2 (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, dependency=aws-cdk.aws-ec2)
+DEBUG: Failed to look up dependency aws-cdk.aws-route53 (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, dependency=aws-cdk.aws-route53)
+DEBUG: Failed to look up dependency aws-cdk.aws-s3 (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, dependency=aws-cdk.aws-s3)
+DEBUG: Failed to look up dependency aws-cdk.aws-lambda (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, dependency=aws-cdk.aws-lambda)
+DEBUG: Failed to look up dependency aws-cdk.aws-s3-assets (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, dependency=aws-cdk.aws-s3-assets)
+DEBUG: Failed to look up dependency aws-cdk.aws-secretsmanager (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, dependency=aws-cdk.aws-secretsmanager)
+DEBUG: Failed to look up dependency aws-cdk.aws-ssm (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, dependency=aws-cdk.aws-ssm)
+DEBUG: Failed to look up dependency aws-cdk.core (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, dependency=aws-cdk.core)
+DEBUG: Package releases lookups complete (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "baseBranch": "main"
+DEBUG: branchifyUpgrades (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Using group branchName template (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Dependency requests is part of group all dependencies (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: 1 flattened updates found: requests (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Returning 1 branch(es) (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Fetching changelog: https://github.com/psf/requests (2.25.1 -> 2.26.0) (repository=sandsoft/reproduction-repositories/renovate-12682)
+ WARN: No github.com token has been configured. Skipping release notes retrieval (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "manager": "pipenv",
+       "depName": "requests",
+       "sourceUrl": "https://github.com/psf/requests"
+DEBUG: config.repoIsOnboarded=true (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: packageFiles with updates (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "config": {
+         "pipenv": [
+           {
+             "packageFile": "Pipfile",
+             "deps": [
+               {
+                 "depType": "dev-packages",
+                 "depName": "aws-cdk.aws-apigateway",
+                 "managerData": {},
+                 "currentValue": "==1.129.0",
+                 "datasource": "pypi",
+                 "depIndex": 0,
+                 "updates": [],
+                 "warnings": [
+                   {
+                     "topic": "aws-cdk.aws-apigateway",
+                     "message": "Failed to look up dependency aws-cdk.aws-apigateway"
+                   }
+                 ],
+                 "versioning": "pep440"
+               },
+               {
+                 "depType": "dev-packages",
+                 "depName": "aws-cdk.aws-ec2",
+                 "managerData": {},
+                 "currentValue": "==1.129.0",
+                 "datasource": "pypi",
+                 "depIndex": 1,
+                 "updates": [],
+                 "warnings": [
+                   {
+                     "topic": "aws-cdk.aws-ec2",
+                     "message": "Failed to look up dependency aws-cdk.aws-ec2"
+                   }
+                 ],
+                 "versioning": "pep440"
+               },
+               {
+                 "depType": "dev-packages",
+                 "depName": "aws-cdk.aws-ecs",
+                 "managerData": {},
+                 "currentValue": "==1.129.0",
+                 "datasource": "pypi",
+                 "depIndex": 2,
+                 "updates": [],
+                 "warnings": [
+                   {
+                     "topic": "aws-cdk.aws-ecs",
+                     "message": "Failed to look up dependency aws-cdk.aws-ecs"
+                   }
+                 ],
+                 "versioning": "pep440"
+               },
+               {
+                 "depType": "dev-packages",
+                 "depName": "aws-cdk.aws-ecs-patterns",
+                 "managerData": {},
+                 "currentValue": "==1.129.0",
+                 "datasource": "pypi",
+                 "depIndex": 3,
+                 "updates": [],
+                 "warnings": [
+                   {
+                     "topic": "aws-cdk.aws-ecs-patterns",
+                     "message": "Failed to look up dependency aws-cdk.aws-ecs-patterns"
+                   }
+                 ],
+                 "versioning": "pep440"
+               },
+               {
+                 "depType": "dev-packages",
+                 "depName": "aws-cdk.aws-iam",
+                 "managerData": {},
+                 "currentValue": "==1.129.0",
+                 "datasource": "pypi",
+                 "depIndex": 4,
+                 "updates": [],
+                 "warnings": [
+                   {
+                     "topic": "aws-cdk.aws-iam",
+                     "message": "Failed to look up dependency aws-cdk.aws-iam"
+                   }
+                 ],
+                 "versioning": "pep440"
+               },
+               {
+                 "depType": "dev-packages",
+                 "depName": "aws-cdk.aws-lambda",
+                 "managerData": {},
+                 "currentValue": "==1.129.0",
+                 "datasource": "pypi",
+                 "depIndex": 5,
+                 "updates": [],
+                 "warnings": [
+                   {
+                     "topic": "aws-cdk.aws-lambda",
+                     "message": "Failed to look up dependency aws-cdk.aws-lambda"
+                   }
+                 ],
+                 "versioning": "pep440"
+               },
+               {
+                 "depType": "dev-packages",
+                 "depName": "aws-cdk.aws-route53",
+                 "managerData": {},
+                 "currentValue": "==1.129.0",
+                 "datasource": "pypi",
+                 "depIndex": 6,
+                 "updates": [],
+                 "warnings": [
+                   {
+                     "topic": "aws-cdk.aws-route53",
+                     "message": "Failed to look up dependency aws-cdk.aws-route53"
+                   }
+                 ],
+                 "versioning": "pep440"
+               },
+               {
+                 "depType": "dev-packages",
+                 "depName": "aws-cdk.aws-s3",
+                 "managerData": {},
+                 "currentValue": "==1.129.0",
+                 "datasource": "pypi",
+                 "depIndex": 7,
+                 "updates": [],
+                 "warnings": [
+                   {
+                     "topic": "aws-cdk.aws-s3",
+                     "message": "Failed to look up dependency aws-cdk.aws-s3"
+                   }
+                 ],
+                 "versioning": "pep440"
+               },
+               {
+                 "depType": "dev-packages",
+                 "depName": "aws-cdk.aws-s3-assets",
+                 "managerData": {},
+                 "currentValue": "==1.129.0",
+                 "datasource": "pypi",
+                 "depIndex": 8,
+                 "updates": [],
+                 "warnings": [
+                   {
+                     "topic": "aws-cdk.aws-s3-assets",
+                     "message": "Failed to look up dependency aws-cdk.aws-s3-assets"
+                   }
+                 ],
+                 "versioning": "pep440"
+               },
+               {
+                 "depType": "dev-packages",
+                 "depName": "aws-cdk.aws-secretsmanager",
+                 "managerData": {},
+                 "currentValue": "==1.129.0",
+                 "datasource": "pypi",
+                 "depIndex": 9,
+                 "updates": [],
+                 "warnings": [
+                   {
+                     "topic": "aws-cdk.aws-secretsmanager",
+                     "message": "Failed to look up dependency aws-cdk.aws-secretsmanager"
+                   }
+                 ],
+                 "versioning": "pep440"
+               },
+               {
+                 "depType": "dev-packages",
+                 "depName": "aws-cdk.aws-ssm",
+                 "managerData": {},
+                 "currentValue": "==1.129.0",
+                 "datasource": "pypi",
+                 "depIndex": 10,
+                 "updates": [],
+                 "warnings": [
+                   {
+                     "topic": "aws-cdk.aws-ssm",
+                     "message": "Failed to look up dependency aws-cdk.aws-ssm"
+                   }
+                 ],
+                 "versioning": "pep440"
+               },
+               {
+                 "depType": "dev-packages",
+                 "depName": "aws-cdk.core",
+                 "managerData": {},
+                 "currentValue": "==1.129.0",
+                 "datasource": "pypi",
+                 "depIndex": 11,
+                 "updates": [],
+                 "warnings": [
+                   {
+                     "topic": "aws-cdk.core",
+                     "message": "Failed to look up dependency aws-cdk.core"
+                   }
+                 ],
+                 "versioning": "pep440"
+               },
+               {
+                 "depType": "dev-packages",
+                 "depName": "requests",
+                 "managerData": {},
+                 "currentValue": "==2.25.1",
+                 "datasource": "pypi",
+                 "depIndex": 12,
+                 "updates": [
+                   {
+                     "bucket": "latest",
+                     "newVersion": "2.26.0",
+                     "newValue": "==2.26.0",
+                     "newMajor": 2,
+                     "newMinor": 26,
+                     "updateType": "minor",
+                     "isRange": true,
+                     "branchName": "renovate/all"
+                   }
+                 ],
+                 "warnings": [],
+                 "versioning": "pep440",
+                 "sourceUrl": "https://github.com/psf/requests",
+                 "changelogUrl": "https://github.com/psf/requests/blob/master/HISTORY.md",
+                 "currentVersion": "2.25.1",
+                 "isSingleVersion": true,
+                 "fixedVersion": "2.25.1"
+               }
+             ],
+             "registryUrls": ["https://pypi.org/simple"],
+             "lockFiles": ["Pipfile.lock"],
+             "constraints": {"python": "== 3.10.*"}
+           }
+         ]
+       }
+DEBUG: processRepo() (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Processing 1 branch: renovate/all (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Calculating hourly PRs remaining (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: currentHourStart=2021-11-16T10:00:00.000+00:00 (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: PR hourly limit remaining: 2 (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Calculating prConcurrentLimit (1) (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: getBranchPr(renovate/all) (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: findPr(renovate/all, undefined, open) (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: 0 PRs are currently open (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: PR concurrent limit remaining: 1 (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Calculated maximum PRs remaining this run (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "prsRemaining": 1
+DEBUG: PullRequests limit = 1 (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Calculating hourly PRs remaining (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: currentHourStart=2021-11-16T10:00:00.000+00:00 (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: PR hourly limit remaining: 2 (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Calculating branchConcurrentLimit (1) (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: 0 already existing branches found:  (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Branch concurrent limit remaining: 1 (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Calculated maximum branches remaining this run (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "branchesRemaining": 1
+DEBUG: Branches limit = 1 (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Setting current branch to main (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: latest commit (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+       "branchName": "main",
+       "latestCommitDate": "2021-11-16T11:36:52+01:00"
+DEBUG: getBranchPr(renovate/all) (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: findPr(renovate/all, undefined, open) (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: branchExists=false (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: dependencyDashboardCheck=undefined (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: recreateClosed is false (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: findPr(renovate/all, Update dependency requests to v2.26.0, !open) (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: prAlreadyExisted=false (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: Checking schedule(at any time, null) (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: No schedule defined (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: Branch needs creating (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: Using reuseExistingBranch: false (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: manager.getUpdatedPackageFiles() reuseExistinbranch=false (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: Starting search at index 523 (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, branch=renovate/all)
+       "depName": "requests"
+DEBUG: Found match at index 523 (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, branch=renovate/all)
+       "depName": "requests"
+DEBUG: pipenv.extractPackageFile() (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: Contents updated (repository=sandsoft/reproduction-repositories/renovate-12682, packageFile=Pipfile, branch=renovate/all)
+       "depName": "requests"
+DEBUG: pipenv.updateArtifacts(Pipfile) (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: Using python constraint from config (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: pipenv lock command (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+       "cmd": "pipenv lock"
+DEBUG: Executing command (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+       "command": ["pipenv lock"]
+DEBUG: exec completed (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+       "cmd": "pipenv lock",
+       "durationMs": 43744,
+       "stdout": "",
+       "stderr": "Creating a virtualenv for this project...\nPipfile: /tmp/renovate/repos/gitlab/sandsoft/reproduction-repositories/renovate-12682/Pipfile\nUsing /usr/local/python/3.10.0/bin/python3 (3.10.0) to create virtualenv...\n\r⠋ Creating virtual environment...\b\r⠙ Creating virtual environment...\b\r⠹ Creating virtual environment...\b\r⠸ Creating virtual environment...\b\r⠼ Creating virtual environment...\b\r⠴ Creating virtual environment...\b\r⠦ Creating virtual environment...created virtual environment CPython3.10.0.final.0-64 in 394ms\n  creator CPython3Posix(dest=/home/ubuntu/.local/share/virtualenvs/renovate-12682-gInthGjL, clear=False, no_vcs_ignore=False, global=False)\n  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/ubuntu/.local/share/virtualenv)\n    added seed packages: pip==21.3.1, setuptools==58.3.0, wheel==0.37.0\n  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator\n\n\b✔ Successfully created virtual environment! \nVirtualenv location: /home/ubuntu/.local/share/virtualenvs/renovate-12682-gInthGjL\nLocking [dev-packages] dependencies...\n\r⠋\rBuilding requirements...\n Locking...\b\r⠙ Locking...\rResolving dependencies...\n\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b\r⠹ Locking...\b\r⠸ Locking...\b\r⠼ Locking...\b\r⠴ Locking...\b\r⠦ Locking...\b\r⠧ Locking...\b\r⠇ Locking...\b\r⠏ Locking...\b\r⠋ Locking...\b\r⠙ Locking...\b✔ Success! \nLocking [packages] dependencies...\nUpdated Pipfile.lock (5faea6)!\n"
+DEBUG: Returning updated Pipfile.lock (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: Updated 1 package files (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: Updated 1 lock files (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+       "updatedArtifacts": ["Pipfile.lock"]
+DEBUG: 2 file(s) to commit (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: Committing files to branch renovate/all (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: Setting git author name (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+       "gitAuthorName": "Tom Sandmann"
+DEBUG: Setting git author email (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+       "gitAuthorEmail": "[REDACTED]"
+DEBUG: git commit (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/all",
+         "commit": "d1d5e1b",
+         "root": false,
+         "summary": {"changes": 2, "insertions": 14, "deletions": 14}
+       }
+DEBUG: git push (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+       "result": {
+         "pushed": [
+           {
+             "deleted": false,
+             "tag": false,
+             "branch": true,
+             "new": true,
+             "alreadyUpdated": false,
+             "local": "refs/heads/renovate/all",
+             "remote": "refs/heads/renovate/all"
+           }
+         ],
+         "branch": {
+           "local": "renovate/all",
+           "remote": "renovate/all",
+           "remoteName": "origin"
+         },
+         "ref": {"local": "refs/remotes/origin/renovate/all"},
+         "remoteMessages": {
+           "all": [
+             "To create a merge request for renovate/all, visit:",
+             "https://gitlab.com/sandsoft/reproduction-repositories/renovate-12682/-/merge_requests/new?merge_request%5Bsource_branch%5D=renovate%2Fall"
+           ],
+           "pullRequestUrl": "https://gitlab.com/sandsoft/reproduction-repositories/renovate-12682/-/merge_requests/new?merge_request%5Bsource_branch%5D=renovate%2Fall"
+         }
+       }
+ INFO: Branch created (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+       "commitSha": "d1d5e1b"
+DEBUG: Ensuring PR (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: There are 0 errors and 0 warnings (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: getBranchPr(renovate/all) (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: findPr(renovate/all, undefined, open) (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: Creating PR (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+       "prTitle": "Update dependency requests to v2.26.0"
+DEBUG: Creating Merge Request: Update dependency requests to v2.26.0 (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+ INFO: PR created (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+       "pr": 1,
+       "prTitle": "Update dependency requests to v2.26.0"
+DEBUG: addAssigneesReviewers(pr=1) (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: Created Merge Request #1 (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: PR is not configured for automerge (repository=sandsoft/reproduction-repositories/renovate-12682, branch=renovate/all)
+DEBUG: getBranchPr(renovate/all) (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: findPr(renovate/all, undefined, open) (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Ensuring Dependency Dashboard (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: ensureIssue() (repository=sandsoft/reproduction-repositories/renovate-12682)
+ INFO: Issue created (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Removing any stale branches (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: config.repoIsOnboarded=true (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Branch lists (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "branchList": ["renovate/all"],
+       "renovateBranches": ["renovate/all"]
+DEBUG: remainingBranches= (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: No branches to clean up (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: ensureIssueClosing() (repository=sandsoft/reproduction-repositories/renovate-12682)
+DEBUG: Repository timing splits (milliseconds) (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "splits": {"init": 3820, "extract": 274, "lookup": 774, "update": 48018},
+       "total": 54976
+DEBUG: http statistics (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "urls": {
+         "https://gitlab.com/api/v4/projects/sandsoft%2Freproduction-repositories%2Frenovate-12682 (GET)": 1,
+         "https://gitlab.com/api/v4/projects/sandsoft%2Freproduction-repositories%2Frenovate-12682/issues (GET)": 2,
+         "https://gitlab.com/api/v4/projects/sandsoft%2Freproduction-repositories%2Frenovate-12682/issues (POST)": 1,
+         "https://gitlab.com/api/v4/projects/sandsoft%2Freproduction-repositories%2Frenovate-12682/merge_requests (GET)": 1,
+         "https://gitlab.com/api/v4/projects/sandsoft%2Freproduction-repositories%2Frenovate-12682/merge_requests (POST)": 1,
+         "https://pypi.org/simple/aws-cdk-aws-apigateway/ (GET)": 1,
+         "https://pypi.org/simple/aws-cdk-aws-ec2/ (GET)": 1,
+         "https://pypi.org/simple/aws-cdk-aws-ecs-patterns/ (GET)": 1,
+         "https://pypi.org/simple/aws-cdk-aws-ecs/ (GET)": 1,
+         "https://pypi.org/simple/aws-cdk-aws-iam/ (GET)": 1,
+         "https://pypi.org/simple/aws-cdk-aws-lambda/ (GET)": 1,
+         "https://pypi.org/simple/aws-cdk-aws-route53/ (GET)": 1,
+         "https://pypi.org/simple/aws-cdk-aws-s3-assets/ (GET)": 1,
+         "https://pypi.org/simple/aws-cdk-aws-s3/ (GET)": 1,
+         "https://pypi.org/simple/aws-cdk-aws-secretsmanager/ (GET)": 1,
+         "https://pypi.org/simple/aws-cdk-aws-ssm/ (GET)": 1,
+         "https://pypi.org/simple/aws-cdk-core/ (GET)": 1,
+         "https://pypi.org/simple/requests/ (GET)": 1
+       },
+       "hostStats": {
+         "gitlab.com": {"requestCount": 6, "requestAvgMs": 694, "queueAvgMs": 0},
+         "pypi.org": {"requestCount": 13, "requestAvgMs": 133, "queueAvgMs": 0}
+       },
+       "totalRequests": 19
+ INFO: Repository finished (repository=sandsoft/reproduction-repositories/renovate-12682)
+       "durationMs": 54976
+DEBUG: Renovate exiting
+
